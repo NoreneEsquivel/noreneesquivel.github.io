@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="header-inner">
-      <div class="logo"><img src="assets/logo.png" alt="Norene Esquivel"></div>
+      <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Norene Esquivel"></a></div>
       <nav>
         <ul>
           
@@ -31,7 +31,7 @@
       <div>
         <h1>Design with structure,<br>made to feel.</h1>
         <p>Design made easy and flexible, anytime, anywhere. Welcome to my corner of this design world!</p>
-        <a class="btn" href="D:\portfolio\about.html">About Me</a>
+        <a class="btn" href="about.html">About Me</a>
       </div>
 
       <aside class="portrait" aria-label="Portrait">
@@ -72,35 +72,25 @@
         
       </article>
       
-      <img src="assets/capy1.png"
-     alt="Capybara mascot"
-     class="floating-capybara">
     </section>
   </main>
 
-  <main class="container">
-    <section>
-      <h2 class="section-title">Contact</h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start">
-        <form class="card" action="#" method="post" style="min-height:240px">
-          <label>Name<br><input name="name" 
-            style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px 
-            solid #ddd"></label><br><br>
-          <label>Email<br><input name="email" 
-            style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px s
-            olid #ddd"></label><br><br>
-          <label>Message<br><textarea name="message" 
-            style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px 
-            solid #ddd;height:90px"></textarea></label><br><br>
+  <section class="container">
+    <h2 class="section-title">Contact</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start">
+      <form class="card" action="#" method="post" style="min-height:240px">
+        <label>Name<br><input type="text" name="name" 
+          style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd"></label><br><br>
+        <label>Email<br><input type="email" name="email" 
+          style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd"></label><br><br>
+        <label>Message<br><textarea name="message" 
+          style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #ddd;height:90px"></textarea></label><br><br>
 
-          <button type="submit" 
-          style="background:var(--accent-pink);
-          color:white;padding:10px 14px;border:none;border-radius:8px">Send Message</button>
-        </form>
-        
-      </div>
-    </section>
-  </main> 
+        <button type="submit" 
+        style="background:var(--wine-red);color:var(--pastel-orange);padding:10px 14px;border:none;border-radius:8px">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <footer class="container">
     <div class="footer-socials">
@@ -110,13 +100,11 @@
 </div>
 
     <p>© 2025 Norene Esquivel</p>
+    <img src="assets/capy1.png" alt="Capybara mascot" class="floating-capybara">
   </footer>
 
   <script src="js/main.js"></script>
+  <!-- Capybara rain container -->
+  <div id="capybara-rain"></div>
 </body>
-<!-- Capybara rain container -->
-<div id="capybara-rain"></div>
-
-<script src="js/capybara-rain.js"></script>
-
 </html>

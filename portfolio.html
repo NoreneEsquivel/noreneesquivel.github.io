@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-</head>
-<body>
   <header>
     <div class="header-inner">
-      <div class="logo"><img src="assets/logo.png" alt="Norene Esquivel"></div>
+      <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Norene Esquivel"></a></div>
       <nav>
         <ul>
           
@@ -33,18 +31,22 @@
         <article class="card" style="flex:1 1 300px">
         <h3>Branding</h3>
        <p>Logo, stationery, and brand guidelines.</p>
-       <iframe src="D:\portfolio\projects\Norene_Esquivel_brandrollout.pdf" 
-       width="320px" height="500px" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-       ></iframe>
+      <div class="embed-wrap">
+        <iframe class="card-embed" src="projects/Norene_Esquivel_brandrollout.pdf" 
+         height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="embed-open" data-type="pdf" data-src="projects/Norene_Esquivel_brandrollout.pdf" aria-label="Open full view">View</button>
+      </div>
       </article>
         
         
         <article class="card" style="flex:1 1 300px">
         <h3>Illustration</h3>
         <p>Sketch and digital based art pieces.</p>
-        <iframe src="D:\portfolio\projects\illustrations1.pdf" 
-       width="320px" height="500px" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-       ></iframe>
+        <div class="embed-wrap">
+          <iframe class="card-embed" src="projects/illustrations1.pdf" 
+         height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <button class="embed-open" data-type="pdf" data-src="projects/illustrations1.pdf" aria-label="Open full view">View</button>
+        </div>
       </article>
         
         
@@ -52,34 +54,39 @@
         <h3>Mockups</h3>
         <p>Skate shop visual assets such as merchandise and posters providing 
         a visual impact on a brand campaign.</p>
-        <img src="D:\portfolio\projects\projects\POSTER1.png" 
-        class="card-image" alt="Branding project mockup">
-        <div class="card-content">
-          <img src="D:\portfolio\projects\projects\POSTER3.png" 
-        class="card-image" alt="Branding project mockup">
-        <div class="card-content">
+        <div class="card-gallery">
+          <div class="img-wrap">
+            <img src="projects/projects/POSTER1.png" class="card-image" alt="Branding project mockup 1">
+            <button class="embed-open" data-type="image" data-src="projects/projects/POSTER1.png" aria-label="Open full view">View</button>
+          </div>
+          <div class="img-wrap">
+            <img src="projects/projects/POSTER3.png" class="card-image" alt="Branding project mockup 2">
+            <button class="embed-open" data-type="image" data-src="projects/projects/POSTER3.png" aria-label="Open full view">View</button>
+          </div>
+        </div>
       </article>
        
         
       <article class="card" style="flex:1 1 300px">
       <h3>Web Portfolio</h3>
       <p>Semantic HTML5 + responsive layout + accessibility basics.</p>
-      <iframe src="D:\portfolio\projects\NoreneEsquivel_Project1_DesignaWebsite.pdf" 
-       width="320px" height="500px" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-       ></iframe>
+      <div class="embed-wrap">
+        <iframe class="card-embed" src="projects/NoreneEsquivel_Project1_DesignaWebsite.pdf" 
+         height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="embed-open" data-type="pdf" data-src="projects/NoreneEsquivel_Project1_DesignaWebsite.pdf" aria-label="Open full view">View</button>
+      </div>
     </article>
        
         
       <article class="card" style="flex:1 1 300px">
       <h3>Motion Graphics</h3>
       <p>Animated logos.</p>
-      <article class="card">
-
-      </img>
-  <img src="D:\portfolio\projects\faerie.gif"
-     alt="Animated preview of web portfolio project"
-     class="card-media">
-    </img>
+      <div class="img-wrap">
+        <img src="projects/faerie.gif"
+       alt="Animated preview of web portfolio project"
+       class="card-media">
+        <button class="embed-open" data-type="image" data-src="projects/faerie.gif" aria-label="Open full view">View</button>
+      </div>
     </article>
 
       </div>
@@ -93,9 +100,7 @@
     <p>© 2025 Norene Esquivel — Portfolio </p>
   </footer>
   <script src="js/main.js"></script>
+  <!-- Capybara rain container -->
+  <div id="capybara-rain"></div>
 </body>
-<!-- Capybara rain container -->
-<div id="capybara-rain"></div>
-
-<script src="js/capybara-rain.js"></script>
 </html>
