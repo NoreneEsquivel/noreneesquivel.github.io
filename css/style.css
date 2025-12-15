@@ -1,0 +1,343 @@
+:root{
+  --wine-red:#7A1F29;
+  --pastel-orange:#FFC9A3;
+  --bg:#FFF7F1;
+  --ink:#1a1a1a;
+  --card:#ffffff;
+  --max-width:1200px;
+  --radius:14px;}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:36px}
+
+header{
+  background:var(#7A1F29);
+}
+.header-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:18px 36px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.logo img{height:62px}
+
+nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{
+  color:var(--pastel-orange);
+  text-decoration:none;
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:10px;
+}
+nav a:hover{background:rgba(255,201,163,0.18)}
+nav a.active{background:rgba(255,201,163,0.28)}
+
+.hero{
+  background:linear-gradient(135deg, rgba(122,31,41,0.92), rgba(122,31,41,0.78));
+  color:#fff;
+  border-radius:var(--radius);
+  padding:28px;
+  display:grid;
+  grid-template-columns:1fr 380px;
+  gap:22px;
+  align-items:center;
+  box-shadow:0 10px 26px rgba(0,0,0,0.10);
+}
+.hero h1{margin:0;color:var(--pastel-orange);font-size:44px;line-height:1.05}
+.hero p{margin:10px 0 0 0;max-width:54ch}
+
+.portrait{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+.portrait img{
+  width:360px;
+  height:360px;
+  object-fit:cover;
+  border-radius:var(--radius);
+  box-shadow:0 10px 20px rgba(0,0,0,0.20);
+  border:3px solid rgba(255,201,163,0.55);
+}
+
+.section-title{color:var(--wine-red);margin:26px 0 10px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:14px;
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:16px;
+  border:2px solid rgba(122,31,41,0.10);
+  box-shadow:0 8px 18px rgba(0,0,0,0.05);
+}
+.card h3{margin:0 0 8px 0;color:var(--wine-red)}
+.card p{margin:0;color:#444}
+
+.btn{
+  display:inline-block;
+  margin-top:16px;
+  background:var(--pastel-orange);
+  color:var(--wine-red);
+  text-decoration:none;
+  font-weight:700;
+  padding:10px 14px;
+  border-radius:12px;
+}
+.btn:hover{filter:brightness(0.98)}
+
+.form{
+  display:grid;
+  gap:12px;
+}
+input, textarea{
+  width:100%;
+  padding:12px;
+  border-radius:12px;
+  border:2px solid rgba(122,31,41,0.25);
+  background:#fff;
+  font:inherit;
+}
+textarea{min-height:120px;resize:vertical}
+button{
+  background:var(--wine-red);
+  color:var(--pastel-orange);
+  border:none;
+  border-radius:12px;
+  padding:12px 14px;
+  font-weight:800;
+  cursor:pointer;
+}
+button:hover{filter:brightness(1.06)}
+
+footer{
+  margin-top:36px;
+  text-align:center;
+  color:rgba(122,31,41,0.85);
+}
+
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .portrait img{width:100%;height:320px}
+}
+@media (max-width:600px){
+  .grid{grid-template-columns:1fr}
+  .header-inner{flex-direction:column;align-items:flex-start}
+  .hero h1{font-size:36px}
+}
+
+.floating-icon {
+  transition: transform 1s ease;
+}
+
+.floating-icon:hover {
+  transform: translateY(-12px) rotate(-3deg);
+}
+.social-float {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1000;
+}
+
+.social-float img {
+  width: 34px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-float a:hover img {
+  transform: translateY(-6px);
+  opacity: 0.85;
+}
+:root{
+  --wine-red:#7A1F29;
+  --pastel-orange:#FFC9A3;
+}
+.footer-socials{
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-socials a{
+  color: var(--wine-red);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-socials a:hover{
+  text-decoration: underline;
+}
+.floating-capybara {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 110px;      /* adjust size here */
+  z-index: 1000;
+  animation: floaty 4s ease-in-out infinite;
+  pointer-events: none; /* decorative only */
+}
+
+@keyframes floaty {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-16px); }
+  100% { transform: translateY(0); }
+}
+.hero {
+  position: relative;
+}
+
+.capybara-deco {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  width: 120px;
+  opacity: 1;
+}
+.project-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--pastel-orange);
+  color: var(--wine-red);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}.heading-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--wine-red);
+}
+
+.heading-icon {
+  width: 36px;        /* icon size */
+  height: auto;
+}
+
+
+.project-btn:hover {
+  background: var(--wine-red);
+  color: var(--pastel-orange);
+  transform: translateY(-2px);
+}
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden; /* IMPORTANT for image corners */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* keeps image cropped nicely */
+  display: block;
+}
+
+.project-card h3 {
+  margin: 14px 16px 6px;
+  color: var(--wine-red);
+}
+
+.project-card p {
+  margin: 0 16px 12px;
+  color: #444;
+}
+
+.project-card .project-btn {
+  margin: 0 16px 16px;
+}
+.card-image{
+  object-fit:contain;
+  background:#fff;
+}
+.card{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;              /* IMPORTANT: clips image to rounded corners */
+  padding:16px;
+}
+
+/* image inside the card */
+.card-image{
+  width:100%;
+  height:220px;                 /* controls the visible area */
+  object-fit:cover;             /* crops neatly instead of stretching */
+  display:block;
+  border-radius:12px;           /* if you want it inside padding */
+  margin-bottom:12px;
+}
+/* Container covers the screen */
+#capybara-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* doesn’t block clicks */
+  overflow: hidden;
+  z-index: 2000;
+}
+
+/* Individual falling capybara */
+.capybara {
+  position: absolute;
+  top: -120px;
+  width: 60px;
+  animation: fall linear forwards;
+  opacity: 0.95;
+}
+
+/* Falling animation */
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+.card-media {
+  width: 100%;
+  height: 220px;        /* match your image height */
+  object-fit: cover;   /* crops nicely */
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.capybara-hover {
+  width: 100px; /* adjust if needed */
+  transition: transform 0.15s ease;
+}
+
+.capybara-hover:hover {
+  animation: capybara-shake 0.4s ease-in-out;
+}
+
+@keyframes capybara-shake {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(-6deg); }
+  40%  { transform: rotate(6deg); }
+  60%  { transform: rotate(-6deg); }
+  80%  { transform: rotate(6deg); }
+  100% { transform: rotate(0deg); }
+}
